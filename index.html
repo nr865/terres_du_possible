@@ -5,48 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terres du possible</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous" defer>     
+    </script>
+
 </head>
 <body>
+    <div class="medium-screen"></div>
+    <div class="large-screen"></div>
     <header>
         <div class="title">
             <img class="logo" src="images/logo-terre-des-possibles1.png" alt="logo Terres du possible">
-            <h1 class="titleH1">Terres du possible - Accompagnement des jeunes en décrochage - Métropole dijonnaise</h1>
+            <div class="text textHeader">
+                <h1 class="h1">Terres du possible - Accompagnement des jeunes en décrochage - Métropole dijonnaise</h1>
+                <h1 class="h1Short">Terres du possible</h1>
+                <h2 class="citation">"Accompagner quelqu'un c'est se placer ni devant, ni derrière,ni à la place. C'est être à côté."</h2>
+            </div>       
         </div>
-        <nav>
-            <ul>
-                <li class="ok">Notre projet</li>
-                <li>Concrètement</li>
-                <li class="dropdown">
-                    <button class="dropbtn">Acteurs <i class="bi bi-caret-down"></i></button>
-                    <div class="dropdown-content">
-                        <a href="#">Les entreprises</a>
-                        <a href="#">L'équipe</a>
-                        <a href="#">Partenaires</a>
-                    </div>
-                </li>
-                <li>Photos</li>
-                <li>Témoignages</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-icon"id="icon">
+                    <div class="icon-1" id="a"></div>
+                    <div class="icon-2" id="b"></div>
+                    <div class="icon-3" id="c"></div>
+                </div>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#project"><span class="projectSpan">Notre</span> projet</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#details">Concrètement</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Acteurs
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="nav-link dropdown-item" href="#companies">Les entreprises</a>
+                        <a class="nav-link dropdown-item" href="#team">L'équipe</a>
+                        <a class="nav-link dropdown-item" href="#partners">Partenaires</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#news">Actualités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#photos">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Témoignages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
     </header>
 
     <main>
         <div class="container">
             <!-- PROJET -->
-            <section class="project">
+            <section id="project">
                 <h2>Terres du possible, c'est quoi ?</h2>
                 <p>Une association qui accompagne <span>les jeunes de 16 à 21 ans</span> en 
-                    décrochage scolaire par <span>l'emploi dans une entreprise locale.</span></p>
+                    décrochage scolaire  par de la <span>remobilisation par leur travail</span> en partenariat avec <span>4 entreprises locales.</span></p>
             </section>
         </div>
         
         <!-- DETAILS -->
-        <section class="details">
+        <section id="details">
             <h2>Concrètement</h2>
             <div class="container">
                 <div class="teenager">
@@ -67,11 +109,11 @@
         </section>
 
         <!-- ENTREPRISES -->
-         <section class="companies">
+         <section id="companies">
             <div class="container">
                 <h2>Les entreprises partenaires</h2>
-                <div class="cards">
-                    <a href="" target="_blank">
+                <div class="cards row g-md-3">
+                    <a class="col-12 col-md-6 col-lg-3" href="https://www.lessaveursdeslouvieres.fr/" target="_blank">
                         <div class="card">
                             <div class="img">
                                 <img src="images/logo-saveurs-louvieres.webp">
@@ -84,10 +126,10 @@
                         </div>
                     </a>
                     
-                    <a href="" target="_blank">
+                    <a class="col-12 col-md-6 col-lg-3" href="https://agro-dfg.wixsite.com/agrodfg" target="_blank">
                         <div class="card">
                             <div class="img">
-                                <img src="images/logo-agro.png">
+                                <img class ="logo-agro" src="images/logo-agro-DGF.JPG">
                             </div>
                             <div class="line"></div>
                             <div class="text">
@@ -97,7 +139,7 @@
                         </div>
                     </a>
         
-                    <a href="" target="_blank">
+                    <a class="col-12 col-md-6 col-lg-3" href="https://www.facebook.com/people/Le-Meix-dOr-Bio/100057556414931/" target="_blank">
                         <div class="card">
                             <div class="img">
                                 <img src="images/logo-meix-or-bio.jpg">
@@ -110,7 +152,7 @@
                         </div>
                     </a>
         
-                    <a href="" target="_blank">
+                    <a class="col-12 col-md-6 col-lg-3" href="https://www.facebook.com/fermedeslouvieres21490/" target="_blank">
                         <div class="card">
                             <div class="img">
                                 <img src="images/logo-ferme-louvieres.png">
@@ -127,12 +169,11 @@
         </section>
         
         <!-- EQUIPE -->
-        <section class="team">
+        <section id="team">
             <h2>L'équipe</h2>
             <div class="container">
                 <div class="img">
-                    <div class="filter"></div>
-                    <img src="images/photo-profil.webp" alt="Photo de Mathilde et Aurélie">
+                    <img src="images/photo-profil.JPG" alt="Photo de Mathilde et Aurélie">
                 </div>
                 <div class="text">
                     <h5>Qui est derrière Terres du possible?</h5>
@@ -143,8 +184,10 @@
         </section>
 
        <!-- PARTENAIRES -->
-        <section class="partners">
-            <h2>Projet accompagné et soutenu par:</h2>
+        <section id="partners">
+            <div class="partner-title">
+                <h2>Projet accompagné et soutenu par:</h2>
+            </div>
             <div class="container">
                 <div class="logos">
                     <img src="images/logo-incubateur.svg" alt="Le T incubateur engagé">
@@ -153,123 +196,250 @@
             </div>
         </section>
 
-        
-        <section class="photos">
-            <h2>Photos</h2>
+        <div class="cover"></div>
+
+        <!-- ACTUALITES -->
+        <section id="news">
+            <h2>Actualités</h2>
             <div class="container">
-                <div class="row g-2">
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
+                <div class="row g-4 g-md-4">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/photo1.jpg">
+                            <div class="card-body">
+                              <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque cumque eligendi.</h5>
+                              <p class="card-text">15 juillet 2022</p>
+                              <a href="#" class="btn">Voir plus</a>
+                            </div>
+                          </div>
                     </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/photo1.jpg">
+                            <div class="card-body">
+                              <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque cumque eligendi.</h5>
+                              <p class="card-text">15 juillet 2022</p>
+                              <a href="#" class="btn">Voir plus</a>
+                            </div>
+                          </div>
                     </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/photo1.jpg">
+                            <div class="card-body">
+                              <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque cumque eligendi.</h5>
+                              <p class="card-text">15 juillet 2022</p>
+                              <a href="#" class="btn">Voir plus</a>
+                            </div>
+                          </div>
                     </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/photo1.jpg">
+                            <div class="card-body">
+                              <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque cumque eligendi.</h5>
+                              <p class="card-text">15 juillet 2022</p>
+                              <a href="#" class="btn">Voir plus</a>
+                            </div>
+                          </div>
                     </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/photo1.jpg">
+                            <div class="card-body">
+                              <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque cumque eligendi.</h5>
+                              <p class="card-text">15 juillet 2022</p>
+                              <a href="#" class="btn">Voir plus</a>
+                            </div>
+                          </div>
                     </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
-                    </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
-                    </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
-                    </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
-                    </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
-                    </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
-                    </div>
-                    <div class="col-3">
-                        <img src="images/photo.jpg">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/photo1.jpg">
+                            <div class="card-body">
+                              <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque cumque eligendi.</h5>
+                              <p class="card-text">15 juillet 2022</p>
+                              <a href="#" class="btn">Voir plus</a>
+                            </div>
+                          </div>
                     </div>
                 </div>
-                <p><a href="" >Voir plus de photos</a></p>
+            </div>
+
+        </section>
+        <!-- PHOTOS -->
+        <section id="photos">
+            <h2>Photos</h2>
+            <div class="container">
+                <div class="row g-2 photos-md">
+                    <div class="col-3" id="photo1" style="background-image: url('images/photo1.jpg')"></div>
+                    <div class="col-3" id="photo2" style="background-image: url('images/photo2.jpg')"></div>
+                    <div class="col-3" id="photo3" style="background-image: url('images/photo3.jpg')"></div>
+                    <div class="col-3" id="photo4" style="background-image: url('images/photo4.jpg')"></div>
+                    <div class="col-3" id="photo5" style="background-image: url('images/photo5.jpg')"></div>
+                    <div class="col-3" id="photo6" style="background-image: url('images/photo1.jpg')"></div>
+                    <div class="col-3" id="photo7" style="background-image: url('images/photo2.jpg')"></div>
+                    <div class="col-3" id="photo8" style="background-image: url('images/photo3.jpg')"></div>
+                    <div class="col-3" id="photo9" style="background-image: url('images/photo4.jpg')"></div>
+                    <div class="col-3" id="photo10" style="background-image: url('images/photo5.jpg')"></div>
+                    <div class="col-3" id="photo11" style="background-image: url('images/photo1.jpg')"></div>
+                    <div class="col-3" id="photo12" style="background-image: url('images/photo2.jpg')"></div>
+                </div>
+                
+                <!-- SLIDER ZOOM PHOTOS-->
+                <div class="row carrousel">
+                    <div class="col-1 col-md-2 previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </div>
+                    <div class="col-10 col-md-8 insideBox">
+                        <div class = "images">
+                            <img id = "carrousel1" src="images/photo1.jpg">
+                            <img id = "carrousel2" src="images/photo2.jpg">
+                            <img id = "carrousel3" src="images/photo3.jpg">
+                            <img id = "carrousel4" src="images/photo4.jpg">
+                            <img id = "carrousel5" src="images/photo5.jpg">
+                            <img id = "carrousel6" src="images/photo1.jpg">
+                            <img id = "carrousel7" src="images/photo2.jpg">
+                            <img id = "carrousel8" src="images/photo3.jpg">
+                            <img id = "carrousel9" src="images/photo4.jpg">
+                            <img id = "carrousel10" src="images/photo5.jpg">
+                            <img id = "carrousel11" src="images/photo1.jpg">
+                            <img id = "carrousel12" src="images/photo2.jpg">
+                        </div>    
+                    </div>
+                    <div class="col-1 col-md-2 next">
+                        <div class="close">
+                            <i class="bi bi-x-lg"></i>
+                        </div>
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+                </div>
                 
             </div>
         </section>
 
-        <!-- témoignages -->
-        <section class="testimonials">
+        <!-- TEMOIGNAGES -->
+        <section id="testimonials">
             <h2>Témoignages</h2> 
-            <div class="container">
-                <div class="row">
-                    <div class="col-3 review">
-                        <div class="userImage">
-                            <img src="images/01.jpg">
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet 
+            <div class="owl-carousel container">
+                <div class="item">
+                    <div class="userImage">
+                        <img src="images/01.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet 
 consectetur adipisicing elit. Reiciendis ratione harum in 
 aspernatur saepe impedit consequatur aperiam eos, expedita quia!</p>
-                        </div>
-                        <div class="userName">
-                            <p>Mary</p>
-                        </div>
                     </div>
-                    <div class="col-3 review">
-                        <div class="userImage">
-                            <img src="images/02.jpg">
-                        </div>
-                        <div class="text">
-                            <p>Lorem, ipsum dolor sit amet 
+                    <div class="userName">
+                        <p>Mary</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="userImage">
+                        <img src="images/02.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem, ipsum dolor sit amet 
 consectetur adipisicing elit. Earum magni dolore 
 labore repellat distinctio aut, fugit corporis iure 
 excepturi? A, quos explicabo ab, provident nemo aliquam 
 illum tempore sint, ducimus blanditiis odit.</p>
-                        </div>
-                        <div class="userName">
-                            <p>Adrian</p>
-                        </div>
                     </div>
-                    <div class="col-3 review">
-                        <div class="userImage">
-                            <img src="images/03.jpg">
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet 
-consectetur adipisicing elit. 
-Labore temporibus delectus 
-repellat.</p>
-                        </div>
-                        <div class="userName">
-                            <p>Richard</p>
-                        </div>
-                    </div>
-                    <div class="col-3 review">
-                        <div class="userImage">
-                            <img src="images/04.jpg">
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet 
-consectetur adipisicing elit. 
-Labore temporibus delectus 
-repellat.</p>
-                        </div>
-                        <div class="userName">
-                            <p>Laura</p>
-                        </div>
+                    <div class="userName">
+                        <p>Adrian</p>
                     </div>
                 </div>
-                
+                <div class="item">
+                    <div class="userImage">
+                        <img src="images/03.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. 
+Labore temporibus delectus 
+repellat.</p>
+                    </div>
+                    <div class="userName">
+                        <p>Richard</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="userImage">
+                        <img src="images/04.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. 
+Labore temporibus delectus 
+repellat.</p>
+                    </div>
+                    <div class="userName">
+                        <p>Laura</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="userImage">
+                        <img src="images/01.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. Reiciendis ratione harum in 
+aspernatur saepe impedit consequatur aperiam eos, expedita quia!</p>
+                    </div>
+                    <div class="userName">
+                        <p>Mary</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="userImage">
+                        <img src="images/02.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem, ipsum dolor sit amet 
+consectetur adipisicing elit. Earum magni dolore 
+labore repellat distinctio aut, fugit corporis iure 
+excepturi? A, quos explicabo ab, provident nemo aliquam 
+illum tempore sint, ducimus blanditiis odit.</p>
+                    </div>
+                    <div class="userName">
+                        <p>Adrian</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="userImage">
+                        <img src="images/03.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. 
+Labore temporibus delectus 
+repellat.</p>
+                    </div>
+                    <div class="userName">
+                        <p>Richard</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="userImage">
+                        <img src="images/04.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. 
+Labore temporibus delectus 
+repellat.</p>
+                    </div>
+                    <div class="userName">
+                        <p>Laura</p>
+                    </div>
+                </div>
 
-        
             </div>
         </section>
 
-          
-        <section class="contact">
+
+        <section id="contact">
             <h2>Contact</h2>
             <div class="container">
                 <form action="">
@@ -284,7 +454,7 @@ repellat.</p>
     <footer>
         <div class="container">
             <div class="logo">
-                <img src="images/logo-terre-des-possibles3.png">
+                <img src="images/terresDP_final.png">
             </div>
            <div class="text">
                 <h3>Association Terres du possible</h3>
@@ -297,11 +467,7 @@ Mathilde : 06 86 96 66 01
 terresdupossible@gmail.com</p></div>
                     <div class="socialsMedia">
                         <div class="text">
-                            <p>Suivez nous sur:</p>
-                            <div class="icons">
-                                <i class="bi bi-facebook"></i>
-                                <i class="bi bi-instagram"></i>
-                            </div>
+ 
                         </div>
                         <!-- <div class="legalMentions">
                             <a href="">Mentions légales</a>
@@ -310,14 +476,9 @@ terresdupossible@gmail.com</p></div>
 
                 </div>
            </div>
-            </div>
-
-               
- 
-           
-           
+            </div>  
         </div>
 
     </footer>
-</body>
+    </body>
 </html>

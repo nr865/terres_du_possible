@@ -1,0 +1,1061 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@font-face {
+	font-family: 'Metropolis';
+	src: url(‘fonts/Metropolis-Medium.otf’) format(‘otf’)
+}
+
+:root{
+    --pink:#e9bbb0;
+    --blue:#273470;
+    --blueLight:#27347033;
+    --yellow:#fcb900;
+    --white:white;
+    --black:black;
+    --blackCover:rgba(0, 0, 0, 0.85);
+}
+body{
+    margin: 0;
+    font-family: 'Libre Baskerville', serif!important;
+}
+
+.medium-screen, .large-screen{
+    display: none;
+}
+
+/* logo et titre */
+header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header .title{
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom:10px ;
+    transition: 0.6s;
+}
+.title .logo{
+    margin-bottom: 1.5%;
+    width: 70px;
+    height: auto;
+    transition: 0.6s;
+}
+header .title .text{
+    width: 100%;
+
+}
+header .title h1{
+    margin-top: 8px;
+    font-family: 'Permanent Marker', cursive;
+    font-size:1.45rem;
+    color: var(--white);
+    transition: 0.6s;
+}
+header .title .h1Short{
+    display: none;
+    position: fixed;
+    top: 26px;
+    left: 100px;
+    font-size: 1.38rem;
+    white-space: pre;
+    transition: 0.6s;
+}
+.citation{
+    margin-top: 15px;
+    font-size:1.1rem;
+    color: var(--white);
+    transition: 0.6s;
+    font-family: 'Courgette', cursive;
+}
+
+
+
+/* menu */
+nav{
+    padding: 0!important;
+    top: -210px;
+}
+.white{
+    background: var(--white);
+}
+.navbar-nav{
+    width: 100%!important;
+}
+
+nav ul li a, nav ul li a:hover{
+    color: inherit!important;
+}
+
+nav ul, .dropbtn{
+    display: flex;
+    justify-content: center;
+    font-family: 'Metropolis';
+    text-transform: uppercase;
+    list-style: none;
+    border-bottom: solid 2px var(--pink);
+    z-index: 1;
+
+}
+
+nav ul li{
+    margin-left: 3%;
+    font-size: 1.16rem;
+}
+nav .active{
+    color:var(--blue);
+    font-weight: bold;
+    cursor: pointer;
+}
+.dropdown-toggle{
+    text-decoration: none;
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.dropdown-item {
+color: var(--black);
+padding: 12px 16px;
+font-weight: 400;
+font-family: 'Metropolis';
+}
+
+.dropdown-menu{
+    padding: 0!important;
+}
+
+/* btn menu hamburger */
+nav button:focus,nav button:active {
+    outline: none !important;
+    box-shadow: none!important;
+ }
+
+ .icon-1, .icon-2, .icon-3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 25px;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: var(--blue);
+    transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
+}
+
+.icon-1 {
+    transform: translate(-50%,-7px);
+  animation-delay: 100ms;
+}
+
+.icon-3 {
+  transform: translate(-50%,7px);
+  animation-delay: 250ms;
+}
+
+.hamburger-icon {
+  position: fixed;
+  height: 37px;
+  width: 37px;
+  top: 35px;
+  right: 25px;  
+  z-index: 100;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--blue);
+  transform: scale(1.2);
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+  }
+
+
+.icon-1.a {
+  transform: translateX(-50%) rotate(40deg) ;
+}
+.icon-3.b {
+  transform: translateX(-50%) rotate(-40deg) ;
+}
+.icon-2.c {
+  opacity: 0;
+}
+
+
+@keyframes slideIn {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  100% {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+
+main .container{
+    width: 90%;
+}
+
+
+/* Projet */
+#project{
+    margin-top: 350px;
+}
+#project h2,#details h2, #companies h2, #team h2, #partners h2, #photos h2, #testimonials h2,
+#contact h2, #news h2{
+    text-align: center;
+    margin-top: 12%;
+    color: var(--blue);
+    font-size: 2.1rem;
+    font-family: 'Permanent Marker', cursive;
+}
+#project p{
+    margin-top: 3%;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+#project span{
+    color: var(--yellow);
+}
+
+/* Concrètement */
+#details .container{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#details h2{
+    margin-bottom: 15px;
+}
+.teenager, .work,.map{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.teenager img, .work img {
+    height: 150px;
+    width: auto;
+    margin-bottom: 10px;
+}
+.map img{
+    height: 250px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+/* Entreprises */
+
+#companies .container h2{
+    color: var(--yellow);
+    margin-top: 0;
+    margin-bottom: 3%;
+}
+#companies{
+    width: 100%;
+    background-color: var(--blue);
+    margin-top: 3%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#companies .container{
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 10px;
+    width: 85%;
+}
+
+
+#companies .container .cards a .card{
+    margin: 0 auto;
+    border: solid 1px var(--yellow);
+    width: 95%;
+    height: 250px;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .text{
+    height: 47%;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.card .img{
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cards a .card img{
+    height: 100%;
+    max-width: 100%;
+    transition: all 0.3s;
+}
+.logo-agro{
+    height: 70%!important;
+    max-width: 200px!important;
+}
+
+#companies a{
+    text-decoration: none;
+    color: inherit;
+}
+#companies a h5{
+    color: var(--yellow);
+}
+
+
+.line{
+    width: 100%;
+    height: 1px;
+    background: var(--yellow);
+    opacity: 0.8;
+}
+
+/* Equipe */
+#team .container{
+    display: flex;
+    flex-direction: column;
+}
+#team h2{
+    margin-bottom: 3%;
+}
+
+#team .container .img img{
+    width: 100%;
+    height: auto;
+}
+#team .container .text h5{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+#team .container .text p{
+    text-align: justify;
+}
+
+/* Partenaires */
+#partners h2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#partners .logos img{
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+}
+#partners .logos{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Actualités */
+#news .container{
+    margin-top: 3%;
+}
+#news .card{
+    width: 100%;
+}
+#news .btn{
+    text-decoration: none;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: var(--white);
+    padding: 7px 22px;
+    text-transform: uppercase;
+	font-family: 'Metropolis';
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+#news .card-title{
+    font-size: 1.22rem;
+}
+#news .card-text{
+    margin-top: 15px;
+    font-size: .97rem;
+}
+
+/* Photos */
+#photos .container{
+    margin-top: 3%;
+    width: 100%;
+}
+.photos-md{
+    display: none!important;
+}
+
+#photos .col-3{
+    height: 150px;
+    overflow: hidden;
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.8s;
+}
+#photos .col-3:hover{
+    background-color: var(--white);
+    opacity: 0.7;
+}
+
+#photo4, #photo9{
+    background-position: center;
+}
+#photo5, #photo10{
+    background-position: 0 -65px;
+}
+
+
+#photos .container p{
+    display: flex;
+    justify-content: end;
+    margin-top: 3%;
+}
+
+
+/* carrousel de photos*/
+#photos{
+    position: relative;
+}
+
+#photos .container{
+    display: flex;
+    justify-content: center;
+}
+.carrousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.bi-x-lg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem!important;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    display: none;
+}
+
+.next, .previous{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.carrousel.active{
+    display: flex!important;
+}
+.images {
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.insideBox .images img{
+    display:none;
+    width:100%;
+}
+.insideBox .images img.active, .carrousel.active{
+    display:block;
+    -webkit-animation: apparition 0.8s ease-out;
+    animation: apparition 0.8s ease-out;
+}
+@-webkit-keyframes apparition{
+    from {opacity: 0;}
+    to{opacity:1;}
+    }
+@keyframes apparition{
+    from {opacity: 0;}
+    to{opacity:1;}
+    }
+
+
+/* témoignages */
+#testimonials .container{
+    margin-top: 3%;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userImage img{
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.item .text{
+    margin-top: 20px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.userName{
+    font-weight: bold;
+}
+
+/* owl-carousel */
+.owl-carousel{
+    width: 76%!important;
+}
+
+.owl-dots{
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+.owl-dots .owl-dot {
+    display: inline-block;
+  }
+.owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: var(--blueLight);
+    display: block;
+    border-radius: 100%;
+}
+.owl-dot.active span{
+    background: var(--blue);
+
+}
+
+.owl-prev span, .owl-next span{
+    font-size: 3rem;
+}
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: -25px;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    right: -25px;
+}
+.owl-prev i, .owl-next i {
+    font-size: 1.5rem;
+    color: var(--blueLight);
+}
+
+
+/* contact */
+#contact .container{
+    margin-top: 3%;
+}
+#contact .container input, #contact .container textarea{
+    background-color: var(--blueLight);
+    border: none;
+}
+#contact .container .btn{
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+#contact input:focus, #contact textarea:focus{
+    border:1px solid var(--blue);
+    box-shadow: none;
+}
+#contact .container button{
+    text-decoration: none;
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    color: var(--white);
+    padding: 12px 35px;
+    text-transform: uppercase;
+	font-family: 'Metropolis';
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+
+/* footer */
+footer{
+    margin: 0;
+    margin-top: 10%;
+    padding-top: 6%;
+    padding-bottom: 3%;
+    background-color: var(--pink);
+    height: 260px;
+}
+footer .container{
+    display: flex;
+    height: 100%;
+}
+footer h3{
+    font-family: 'Permanent Marker', cursive;
+}
+footer .logo{
+    height: 100%;
+    width: 27%;
+    margin-left: 0px;
+}
+footer .logo img{
+    width: 75px;
+}
+footer h3{
+    margin-bottom: 25px;
+}
+footer .text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+footer .infos{
+    display: flex;
+    gap: 50px;
+}
+
+.address{
+    width: 55%;
+    white-space: pre;
+    height: 140px;
+}
+
+
+.socialsMedia .text p{
+    margin-bottom: 7px;
+}
+.socialsMedia .text i{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.socialsMedia{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    flex-direction: column;
+    width: 80%;
+    height: 143px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    
+    .medium-screen{
+        display: block;
+    }
+
+    /* logo et titre */
+    #project{
+        margin-top: 270px;
+    }
+    header .title{
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .title .logo{
+        margin-left: 3%;
+        margin-right: 2.5%;
+        width: 80px;
+    }
+    header .title .text{
+        width: 75%;
+    }
+    header .title h1{
+        margin-top: 0;
+        margin-left: 1%;
+    }
+    .citation{
+        margin-top: 0;
+        margin-left: 1%;
+    }
+
+    /* menu */
+    nav ul li:hover, .active, .dropbtn:hover, .dropbtn i:hover{
+        color:var(--blue);
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .dropdown-item:hover {
+        background-color: var(--blueLight);
+        color: var(--black);
+    }
+
+    nav{
+        top: 0;
+    }
+
+    main .container{
+        width: 75%;
+    }
+    nav ul li{
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    .projectSpan{
+        display: none;
+    }
+
+    /* Projet */
+    #project h2,#details h2, #companies h2, #team h2, #partners h2, #photos h2, #testimonials h2,
+    #contact h2, #news h2{
+        margin-top: 8%;
+    }
+    
+    /* Concrètement */
+    #details h2{
+        margin-bottom: 0;
+    }
+
+
+    /* Entreprises */
+    .logo-agro:hover{
+        height: 55%!important;
+        max-width: 200px!important;
+    }
+    .cards a .card img:hover{
+        height: 96%;
+        max-width: 96%;
+    }
+    #companies a:hover{
+        color: inherit;
+    }
+    #companies .container{
+        width: 75%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    #companies .container .cards a .card{
+        width: 100%;
+        margin: 0;
+    }
+
+
+    /* Partenaires */
+    .partner-title{
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    /* Actualités */
+    #news .btn:hover{
+        background-color: var(--white);
+        color: var(--blue);
+    }
+
+    /* contact */
+    #contact .container button:hover{
+        background-color: var(--white);
+        color: var(--yellow);
+    }
+    #contact{
+        margin-top: -2%;
+    }
+    
+
+}
+
+@media screen and (min-width: 992px) {
+    .large-screen{
+        display: block;
+    }
+    
+     /* logo et titre */
+     header .title{
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        padding-top: 70px;
+    }
+    .title .logo{
+        margin-left: 4%;
+        width: 100px;
+    }
+    header .title .text{
+        width: 100%;
+    }
+    header .title h1{
+        margin-top: 0;
+        margin-left: 1%;
+        font-size:1.5rem;
+    }
+    .citation{
+        margin-top: 0;
+        margin-left: 1%;
+        font-size:1.3rem;
+    }
+
+    /* Menu */
+    .projectSpan{
+        display: inline-block;
+    }
+    nav ul li{
+        margin-left: 3%;
+        font-size: 1.16rem;
+    }
+
+
+    #project h2,#details h2, #companies h2, #team h2, #partners h2, #photos h2, #testimonials h2,
+    #contact h2, #news h2{
+        font-size: 2.4rem;
+    }
+
+    /* Projet */
+    #project{
+        margin-top: 300px;
+    }
+
+    #project p{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+
+    /* Concrètement */
+    #details .container{
+        padding-top: 3%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8%;
+    }
+    #details h2{
+        margin-bottom: 5px;
+    }
+    .teenager, .work,.map{
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    .teenager img, .work img {
+        margin-bottom: 0;
+    }
+    .map img{
+        margin-bottom: 0;
+        margin-top: -12%;
+    }
+
+
+    /* Entreprises */
+
+    #companies{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    #companies .container{
+        padding: 40px;
+        width: 75%;
+    }
+
+
+    #companies .container .cards a .card{
+        width: 100%;
+        height: 320px;
+        padding: 15px 30px;
+    }
+
+    .card .img{
+        height: 40%;
+    }
+    .cards a .card img{
+        height: 87%;
+        max-width: 87%;
+    }
+    .logo-agro{
+        height: 45%!important;
+        max-width: 200px!important;
+    }
+
+    .line{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Equipe */
+    #team .container{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #team .container .img, #team .container .text{
+        width: 50%;
+    }
+
+    #team .container .text h5{
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
+
+    #team .container .text p{
+        text-align: left;
+    }
+
+
+    /* Partenaires */
+    #partners{
+        text-align: center;
+    }
+    #partners .logos img{
+        width: 150px;
+    }
+    #partners .logos{
+        margin-top: 3%;
+        display: block;
+    }
+
+
+    /* Photos */
+    #photos .container{
+        width: 75%;
+    }
+
+    .photos-md{
+        display: flex!important;
+    }
+
+    .cover.active{
+        position: absolute;
+        margin: -200px 0;
+        width: 100%;
+        height:3000px;
+        background: var(--blackCover);
+        z-index: 100;
+    }
+
+
+    /* carrousel de photos*/
+
+    #photos .container{
+        display: block;
+    }
+
+    .carrousel{
+        position: fixed;
+        justify-content: center;
+        flex-direction: column;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:65%;
+        width:70%;
+        height: 80%;
+        z-index: 110;
+        display: none!important;
+    }
+    .insideBox{
+        display: flex;
+        justify-content: center;
+    }
+
+    .carrousel i{
+        color: var(--white);
+        font-size: 3rem;
+    }
+
+    .bi-x-lg{
+        display: block;
+    }
+
+    .images {
+        max-width:518px;
+        max-height: 347px;
+    }
+    .insideBox .images img{
+        max-width:518px;
+        max-height: 347px;
+        width:auto;
+        height: auto;
+    }
+
+
+    /* témoignages */
+
+    /* owl-carousel */
+    .owl-carousel{
+        width: 100%!important;
+    }
+
+    .owl-prev {
+        left: -40px;
+    }
+
+    .owl-next {
+        right: -40px;
+    }
+
+
+    /* footer */
+    footer{
+        margin-top: 3%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        height: 250px;
+    }
+    footer .logo{
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+    footer .logo img{
+        width: 180px;
+    }
+    footer h3{
+        margin-bottom: 25px;
+    }
+    footer .text{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    footer .infos{
+        display: flex;
+        gap: 50px;
+    }
+
+    .address{
+        width: 55%;
+        white-space: pre;
+        height: 140px;
+    }
+
+
+    .socialsMedia .text p{
+        margin-bottom: 7px;
+    }
+    .socialsMedia .text i{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+    .socialsMedia{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        flex-direction: column;
+        width: 80%;
+        height: 143px;
+    }
+
+}
